@@ -1,5 +1,5 @@
-import styles from './my-element.scss';
-import { LitElement, html } from 'lit';
+// import styles from './my-element.scss';
+import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 /**
@@ -10,7 +10,14 @@ import { customElement, property } from 'lit/decorators.js';
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  static styles = styles;
+  static styles = css`
+    :host {
+      display: block;
+      border: solid 1px #00f;
+      padding: 16px;
+      max-width: 800px;
+    }
+  `;
 
   /**
    * The name to say "Hello" to.
