@@ -1,6 +1,6 @@
 {
   "name": "miwa-lit-sample",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/miwa-lit-sample.es.js",
   "types": "types/MyElement.react.d.ts",
