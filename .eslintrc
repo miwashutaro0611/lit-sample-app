@@ -9,10 +9,18 @@
     "sourceType": "module",
     "project": ["./tsconfig.json"]
   },
-  "extends": ["plugin:lit/recommended"],
-  "plugins": ["lit"],
+  "extends": ["plugin:lit/recommended", "plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
+  "plugins": ["lit", "@typescript-eslint", "import"],
   "rules": {
     "lit/no-legacy-template-syntax": "error",
-    "lit/no-template-arrow": "warn"
+    "lit/no-template-arrow": "warn",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports"
+      }
+    ],
+    "sort-imports": 0,
+    "import/order": [2, { "alphabetize": { "order": "asc" } }]
   }
 }
