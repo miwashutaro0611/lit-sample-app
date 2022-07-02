@@ -1,6 +1,6 @@
 ---
 name: 'enhancement'
-about: '日毎のタスクやTODOのチケットはこちら'
+about: 'Click here for daily tasks and TODO tickets.'
 labels: enhancement
 ---
 
