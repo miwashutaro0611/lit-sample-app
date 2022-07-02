@@ -5,10 +5,10 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/MyElement.react.ts',
-      formats: ['es']
+      formats: ['es'],
     },
     rollupOptions: {
-      external: /^lit/
-    }
+      external: /^lit/,
+    },
   },
 })

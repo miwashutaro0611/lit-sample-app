@@ -1,6 +1,5 @@
-// import styles from './my-element.scss';
-import { LitElement, css, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js'
+import { LitElement, css, html } from 'lit'
 
 /**
  * An example element.
@@ -17,7 +16,7 @@ export class MyElement extends LitElement {
       padding: 16px;
       max-width: 800px;
     }
-  `;
+  `
 
   /**
    * The name to say "Hello" to.
@@ -34,9 +33,7 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <h1>Hello, ${this.name}!</h1>
-      <button @click=${this._onClick} part="button">
-        Click Count: ${this.count}
-      </button>
+      <button @click=${this._onClick} part="button">Click Count: ${this.count}</button>
       <slot></slot>
     `
   }
