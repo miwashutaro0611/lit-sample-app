@@ -25,7 +25,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": "yarn lint:js",
+    "./src/**/*.{ts,tsx}": "yarn lint:js",
     "package.json": "yarn lint:package"
   },
   "dependencies": {

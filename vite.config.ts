@@ -4,11 +4,13 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/MyElement.react.ts',
-      formats: ['es'],
+      entry: 'src/index.ts',
+      name: 'LitSample',
+      fileName: 'lit-sample',
+      formats: ['es']
     },
     rollupOptions: {
-      external: /^lit/,
-    },
-  },
+      external: /^lit/
+    }
+  }
 })
