@@ -1,4 +1,4 @@
-import type { PropertyValues } from 'lit';
+import type { PropertyValues } from 'lit'
 import { LitElement, html } from 'lit'
 import { customElement, property, query } from 'lit/decorators.js'
 import { isSameDate } from '../../utils/date'
