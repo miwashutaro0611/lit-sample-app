@@ -11,6 +11,6 @@ async function sha256(message: string) {
   return hashHex
 }
 
-export const calculateSHA = (value: string) => {
+export const calculateSHA = (value: string): any => {
   return until(sha256(value), 'Calculating sha...')
 }

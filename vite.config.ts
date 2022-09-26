@@ -9,14 +9,9 @@ export default defineConfig({
     },
   },
   build: {
-    lib: {
-      entry: 'src/index.ts',
-      name: 'LitSample',
-      fileName: 'lit-sample',
-      formats: ['es']
-    },
     rollupOptions: {
-      external: /^lit/
+      external: /^lit/,
+      input: ['src/index.ts', 'src/react.ts'],
     }
   }
 })

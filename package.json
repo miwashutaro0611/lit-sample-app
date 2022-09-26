@@ -29,7 +29,9 @@
     "package.json": "yarn lint:package"
   },
   "dependencies": {
-    "lit": "^2.0.2"
+    "@lit-labs/react": "^1.0.8",
+    "lit": "^2.0.2",
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
