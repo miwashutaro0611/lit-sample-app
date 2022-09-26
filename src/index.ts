@@ -6,6 +6,9 @@ import { ConditionalTemplates } from './components/conditional-templates'
 import { CustomAtributeConverter } from './components/custom-atribute-converter'
 import { ElementComposition } from './components/element-composition'
 import { ExpressionTypes } from './components/expression-types'
+import { GuardDirective } from './components/guard-directive'
+import { IfdefinedDirective } from './components/ifdefined-directive'
+import { LiveDirective } from './components/live-directive'
 import { MyElement } from './components/my-element/my-element'
 import { RepeatingTemplates } from './components/repeating-templates'
 import { SlottingChildren } from './components/slotting-children'
@@ -24,4 +27,7 @@ export {
   AsyncReplace,
   CacheComponent,
   ClassMap,
+  GuardDirective,
+  IfdefinedDirective,
+  LiveDirective,
 }
